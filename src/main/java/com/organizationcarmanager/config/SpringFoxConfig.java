@@ -16,7 +16,7 @@ public class SpringFoxConfig {
     @Bean
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("SpringBoot-Swagger-API")
+                .groupName("Organization Car Manager API")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.organizationcarmanager.resources"))
                 .build()
@@ -25,7 +25,7 @@ public class SpringFoxConfig {
 
     private ApiInfo metaData() {
         return new ApiInfoBuilder()
-                .description("organizationcarmanager API")
+                .description("Organization Car Manager API")
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
